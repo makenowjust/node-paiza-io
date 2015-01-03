@@ -7,5 +7,10 @@
   "repository": "https://github.com/MakeNowJust/node-paiza-io.git",
   "homepage": "https://github.com/MakeNowJust/node-paiza-io",
   "bugs": "https://github.com/MakeNowJust/node-paiza-io/issues",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^2.1.1",
+    "lodash": "^2.4.1",
+    "request": "^2.51.0"
+  }
 }
