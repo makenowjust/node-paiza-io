@@ -1,6 +1,6 @@
 {
   "name": "paiza-io",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "paiza.io unofficial API wrapper - you can run any language on Node.js!",
   "license": "MIT",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
