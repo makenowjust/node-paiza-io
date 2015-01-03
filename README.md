@@ -1,4 +1,4 @@
-#node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/bloem.js.svg?branch=master)](https://travis-ci.org/MakeNowJust/bloem.js)
+#node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io)
 
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
