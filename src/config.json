@@ -2,19 +2,19 @@
   "default_parameter": {
     "api_key": "guest"
   },
-  "base_url": "https://api.paiza.io/",
+  "base_url": "https://api.paiza.io",
   "api": {
     "create": {
       "method": "POST",
-      "path": "runners/create"
+      "path": "/runners/create"
     },
     "get_status": {
       "method": "GET",
-      "path": "runners/get_status"
+      "path": "/runners/get_status"
     },
     "get_details": {
       "method": "GET",
-      "path": "runners/get_details"
+      "path": "/runners/get_details"
     }
   }
 }
