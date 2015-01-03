@@ -8,9 +8,17 @@
   "homepage": "https://github.com/MakeNowJust/node-paiza-io",
   "bugs": "https://github.com/MakeNowJust/node-paiza-io/issues",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "debug": "^2.1.1",
     "lodash": "^2.4.1",
     "request": "^2.51.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "nock": "^0.53.0"
   }
 }
