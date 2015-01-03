@@ -1,0 +1,11 @@
+{
+  "name": "paiza-io",
+  "version": "0.1.0-dev",
+  "description": "paiza.io API wrapper - you can run any language on Node.js!",
+  "license": "MIT",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "repository": "https://github.com/MakeNowJust/node-paiza-io.git",
+  "homepage": "https://github.com/MakeNowJust/node-paiza-io",
+  "bugs": "https://github.com/MakeNowJust/node-paiza-io/issues",
+  "main": "index.js"
+}
