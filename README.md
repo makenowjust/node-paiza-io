@@ -81,7 +81,7 @@ you may want to read official [API document] with this.
 
 ####returns
 
-it don't return clearly, so its result is `undefined`.
+it dosen't return clearly, so its result is `undefined`.
 
 
 ##license
