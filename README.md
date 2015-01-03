@@ -77,6 +77,7 @@ you may want to read official [API document] with this.
     - `option.max_get_status_loop` is max number of [runners/get_status] request for checking completed running.  If requests number is overflow this, `paiza_io` throws an error.
     - `option.retry_get_status_time` is a time of retrying [runners/get_status].
     - `option.parameter` will be passed to [runners/create].
+  - `callback` is a `Function` whose signature is `function callback(error, result)`. `result` is result json of [runners/get_details], however it is extended by `http_result` parameter which is http response of [runners/get_details].
 
 ####returns
 
@@ -95,3 +96,4 @@ if this package has a bug and you fix it, i am waiting your pull-request and iss
 [API document]: https://api.paiza.io/docs/swagger/
 [runners/create]: https://api.paiza.io/docs/swagger/#!/runners/Runners_create
 [runners/get_status]: https://api.paiza.io/docs/swagger/#!/runners/Runners_get_status
+[runners/get_details]: https://api.paiza.io/docs/swagger/#!/runners/Runners_get_details
