@@ -2,7 +2,11 @@
 
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
-<font size=6>Thank [paiza.io] for providing such greatest API!!</font>
+__Thank [paiza.io] for providing such greatest API!!__
+
+##notice for using
+
+this package uses [paiza.io]'s API. __so please read [term of use (Japanese only)](http://paiza.jp/guide/kiyaku)__!
 
 ##install
 
@@ -41,7 +45,7 @@ paiza_io('python', 'print "Hello, Python World!"', '', function (error, result) 
 
 run C++ on Node.js.
 
-```
+```javascript
 var
 paiza_io = require('paiza_io');
 
