@@ -1,4 +1,4 @@
-#node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io)
+#node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io) [![npm version](https://badge.fury.io/js/paiza-io.svg)](http://badge.fury.io/js/paiza-io)
 
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
