@@ -10,10 +10,6 @@ config = require('./config');
 
 // === utility ===
 
-function create_api_parameter(parameter) {
-  return _.defaults(_.clone(parameter), config.default_parameter);
-}
-
 function wrap_request(method, base_url, path, parameter, callback) {
   debug('request start');
   debug('method = %s', method);
@@ -27,7 +23,6 @@ function wrap_request(method, base_url, path, parameter, callback) {
     url: base_url + path,
     json: true,
   };
-  parameter = create_api_parameter(parameter);
   if (method.toUpperCase() === 'POST') {
     options.form = parameter;
   } else {
@@ -54,7 +49,7 @@ function wrap_request(method, base_url, path, parameter, callback) {
 function create(parameter, callback) {
   return wrap_request(
     config.api.create.method,
-    base_url || config.base_url,
+    config.base_url,
     config.api.create.path,
     parameter,
     callback);
@@ -64,7 +59,7 @@ function create(parameter, callback) {
 function get_status(parameter, callback) {
   return wrap_request(
     config.api.get_status.method,
-    base_url || config.base_url,
+    config.base_url,
     config.api.get_status.path,
     parameter,
     callback);
@@ -74,7 +69,7 @@ function get_status(parameter, callback) {
 function get_details(parameter, callback) {
   return wrap_request(
     config.api.get_details.method,
-    base_url || config.base_url,
+    config.base_url,
     config.api.get_details.path,
     parameter,
     callback);
