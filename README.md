@@ -73,6 +73,7 @@ you may want to read official [API document] with this.
   - `code` is source code. it will be passed as `source_code` parameter to [runners/create].
   - `input` is stdin text. it will be passed as `input` parameter to [runners/create].
   - `option` is a json. it is an optional argument. it follws such keys/values.
+    - `option.api_key`  is your API key of paiza-io. it will be passed as `api_key` parameter to all request.
     - `option.base_url` uses as base URL for API request.
     - `option.max_get_status_loop` is max number of [runners/get_status] request for checking completed running.  If requests number is overflow this, `paiza_io` throws an error.
     - `option.retry_get_status_time` is a time of retrying [runners/get_status].
@@ -82,6 +83,17 @@ you may want to read official [API document] with this.
 ####returns
 
 it dosen't return clearly, so its result is `undefined`.
+
+
+###`paiza_io.with_api_key(api_key)`
+
+####arguments
+
+ - `api_key` is your API key of paiza-io. it will be passed as `api_key` parameter to all request.
+
+####returns
+
+it returns wrapped `paiza_io` function.
 
 
 ##license
