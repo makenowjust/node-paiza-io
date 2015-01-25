@@ -16,9 +16,10 @@ describe('paiza_io', function () {
   var
   id = 'abcdefgtest', lang = 'ruby', code = 'puts "Hello, World!"', input = '',
   stdout = 'Hello, World!\n', stderr = '', exit_code = 0, time = '0.11', memory = 4200, result_ = 'success',
-  param = qs.stringify(_.defaults({
+  param = qs.stringify({
     id: id,
-  }, config.default_parameter));
+    api_key: config.api_key,
+  });
 
   afterEach(function () {
     nock.cleanAll();
@@ -29,7 +30,7 @@ describe('paiza_io', function () {
       //.log(console.log)
       .post(config.api.create.path)
       .reply(200, {
-        id: id, 
+        id: id,
         status: 'running',
       })
       .get(config.api.get_status.path + '?' + param)
