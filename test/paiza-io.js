@@ -120,4 +120,43 @@ describe('paiza_io', function () {
       done();
     }, 2000);
   });
+
+  describe('.with_api_key', function () {
+    var
+    param_,
+    api_key = 'xxxyyyzzz';
+
+    before(function () {
+      param_ = param;
+      param = qs.stringify({
+        id: id,
+        api_key: api_key,
+      });
+    });
+
+    after(function () {
+      param = param_;
+    })
+
+    it('should wrap `paiza_io\' function to use specified api_key.', function (done) {
+      var
+      scope = create_scope();
+
+      paiza_io.with_api_key(api_key)(lang, code, input, {}, function (error, result) {
+        expect(error).to.be.null;
+        expect(result.id).to.equal(id);
+        expect(result.language).to.equal(lang);
+        expect(result.status).to.equal('completed');
+        expect(result.stdout).to.equal(stdout);
+        expect(result.stderr).to.equal(stderr);
+        expect(result.exit_code).to.equal(exit_code);
+        // expect(result.time).to.equal(time);
+        // expect(result.memory).to.equal(memory);
+        expect(result.result).to.equal(result_);
+      });
+      setTimeout(function () {
+        scope.done();
+        done();
+      }, 4000);    });
+  });
 });
