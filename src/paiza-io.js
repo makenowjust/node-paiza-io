@@ -20,6 +20,7 @@ function paiza_io(language, code, input, option, callback) {
     base_url: config.base_url,
     retry_get_status_time: 1000,
     max_get_status_loop: 10,
+    api_key: config.api_key,
   });
 
   var
@@ -27,6 +28,7 @@ function paiza_io(language, code, input, option, callback) {
     language: language,
     source_code: code,
     input: input,
+    api_key: option.api_key,
   }, option.parameter);
 
   create(parameter, option, callback);
@@ -56,6 +58,7 @@ function get_status(option, callback) {
       setTimeout(function get_status_loop_timeout() {
         api.get_status({
           id: body.id,
+          api_key: option.api_key,
         }, function (error, body) {
           if (error) return callback(error);
           debug('response ==> %o', body);
@@ -70,6 +73,7 @@ function get_details(id, option, callback) {
   debug('get_details phase');
   api.get_details({
     id: id,
+    api_key: option.api_key,
   }, callback);
 }
 

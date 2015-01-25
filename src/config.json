@@ -1,7 +1,5 @@
 {
-  "default_parameter": {
-    "api_key": "guest"
-  },
+  "api_key": "guest",
   "base_url": "https://api.paiza.io",
   "api": {
     "create": {
