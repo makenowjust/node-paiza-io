@@ -77,4 +77,18 @@ function get_details(id, option, callback) {
   }, callback);
 }
 
+paiza_io.with_api_key = function (api_key) {
+  return function wrap_paiza_io(language, code, input, option, callback) {
+    if (!callback) {
+      callback = option;
+      option = {};
+    }
+    option = _.defaults(_.clone(option), {
+      api_key: api_key
+    });
+
+    return paiza_io(language, code, input, option, callback);
+  }
+}
+
 module.exports = paiza_io;
