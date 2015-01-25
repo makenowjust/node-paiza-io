@@ -51,12 +51,7 @@ function wrap_request(method, base_url, path, parameter, callback) {
 // === exports ===
 
 // wrapper of runners/create
-function create(parameter, base_url /* this parameter exists for testing */, callback) {
-  if (!callback) {
-    callback = base_url;
-    base_url = '';
-  }
-
+function create(parameter, callback) {
   return wrap_request(
     config.api.create.method,
     base_url || config.base_url,
@@ -66,12 +61,7 @@ function create(parameter, base_url /* this parameter exists for testing */, cal
 }
 
 // wrapper of runners/get_status
-function get_status(parameter, base_url /* this parameter exists for testing */, callback) {
-  if (!callback) {
-    callback = base_url;
-    base_url = '';
-  }
-
+function get_status(parameter, callback) {
   return wrap_request(
     config.api.get_status.method,
     base_url || config.base_url,
@@ -81,12 +71,7 @@ function get_status(parameter, base_url /* this parameter exists for testing */,
 }
 
 // wrapper of runners/get_details
-function get_details(parameter, base_url /* this parameter exists for testing */, callback) {
-  if (!callback) {
-    callback = base_url;
-    base_url = '';
-  }
-
+function get_details(parameter, callback) {
   return wrap_request(
     config.api.get_details.method,
     base_url || config.base_url,
