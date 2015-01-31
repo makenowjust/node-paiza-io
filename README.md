@@ -1,21 +1,25 @@
-#node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io) [![npm version](https://badge.fury.io/js/paiza-io.svg)](http://badge.fury.io/js/paiza-io) [![Dependency Status](https://david-dm.org/MakeNowJust/node-paiza-io.svg)](https://david-dm.org/MakeNowJust/node-paiza-io)
+node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io) [![npm version](https://badge.fury.io/js/paiza-io.svg)](http://badge.fury.io/js/paiza-io) [![Dependency Status](https://david-dm.org/MakeNowJust/node-paiza-io.svg)](https://david-dm.org/MakeNowJust/node-paiza-io)
+===
 
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
 __Thank [paiza.io] for providing such greatest API!!__
 
-##notice for using
+notice for using
+---
 
 this package uses [paiza.io]'s API. __so please read [term of use (Japanese only)](http://paiza.jp/guide/kiyaku)__!
 
-##install
+install
+---
 
 ```console
 $ npm install --save paiza-io
 ```
 
 
-##using
+using
+---
 
 run Ruby on Node.js.
 
@@ -61,13 +65,14 @@ paiza_io('cpp', [
 });
 ```
 
-##api
+api
+---
 
 you may want to read official [API document] with this.
 
-###`paiza_io(lang, code, input, option, callback)`
+### `paiza_io(lang, code, input, option, callback)`
 
-####arguments
+#### arguments
 
   - `lang` is language name. it will be passed as `language` parameter to [runners/create].
   - `code` is source code. it will be passed as `source_code` parameter to [runners/create].
@@ -80,27 +85,29 @@ you may want to read official [API document] with this.
     - `option.parameter` will be passed to [runners/create].
   - `callback` is a `Function` whose signature is `function callback(error, result)`. `result` is result json of [runners/get_details], however it is extended by `http_result` parameter which is http response of [runners/get_details].
 
-####returns
+#### returns
 
 it dosen't return clearly, so its result is `undefined`.
 
 
-###`paiza_io.with_api_key(api_key)`
+### `paiza_io.with_api_key(api_key)`
 
-####arguments
+#### arguments
 
  - `api_key` is your API key of paiza-io. it will be passed as `api_key` parameter to all request.
 
-####returns
+#### returns
 
 it returns wrapped `paiza_io` function.
 
 
-##license
+license
+---
 
 this package was published under the [MIT-License](http://makenowjust.github.io/license/mit?2015).
 
-##contribute
+contribute
+---
 
 if this package has a bug and you fix it, i am waiting your pull-request and issue :laughing:
 
