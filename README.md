@@ -1,9 +1,14 @@
-node-paiza-io [![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io) [![npm version](https://badge.fury.io/js/paiza-io.svg)](http://badge.fury.io/js/paiza-io) [![Dependency Status](https://david-dm.org/MakeNowJust/node-paiza-io.svg)](https://david-dm.org/MakeNowJust/node-paiza-io)
+node-paiza-io
 ===
 
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
 __Thank [paiza.io] for providing such greatest API!!__
+
+[![npm](https://nodei.co/npm/paiza-io.png?downloads=true&stars=true)](https://nodei.co/npm/paiza-io/)
+[![Build Status](https://travis-ci.org/MakeNowJust/node-paiza-io.svg?branch=master)](https://travis-ci.org/MakeNowJust/node-paiza-io)
+[![Dependency Status](https://david-dm.org/MakeNowJust/node-paiza-io.svg)](https://david-dm.org/MakeNowJust/node-paiza-io)
+
 
 notice for using
 ---
@@ -65,6 +70,7 @@ paiza_io('cpp', [
 });
 ```
 
+
 api
 ---
 
@@ -89,6 +95,8 @@ you may want to read official [API document] with this.
 
 it dosen't return clearly, so its result is `undefined`.
 
+
+- - -
 
 ### `paiza_io.with_api_key(api_key)`
 
