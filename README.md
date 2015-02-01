@@ -30,7 +30,7 @@ run Ruby on Node.js.
 
 ```javascript
 var
-paiza_io = require('paiza_io');
+paiza_io = require('paiza-io');
 
 paiza_io('ruby', 'puts "Hello, Ruby World!"', '', function (error, result) {
   if (error) throw error;
@@ -43,7 +43,7 @@ run Python on Node.js.
 
 ```javascript
 var
-paiza_io = require('paiza_io');
+paiza_io = require('paiza-io');
 
 paiza_io('python', 'print "Hello, Python World!"', '', function (error, result) {
   if (error) throw error;
@@ -56,7 +56,7 @@ run C++ on Node.js.
 
 ```javascript
 var
-paiza_io = require('paiza_io');
+paiza_io = require('paiza-io');
 
 paiza_io('cpp', [
   '#include <iostream>',
