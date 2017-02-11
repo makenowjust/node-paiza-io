@@ -1,6 +1,8 @@
 node-paiza-io
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MakeNowJust/node-paiza-io.svg)](https://greenkeeper.io/)
+
 [paiza.io] API __unofficial__ wrapper - you can run any language on Node.js!
 
 __Thank [paiza.io] for providing such greatest API!!__
